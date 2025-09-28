@@ -1,0 +1,94 @@
+/* ===== Reset General ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Estilo del Body ===== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(to right, #f0fff0, #e0ffe0);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* ===== Título Principal ===== */
+h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 30px;
+  color: #0b5345;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* ===== Contenedores ===== */
+.Padre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hijo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ===== Tarjetas (nieto) ===== */
+.nieto {
+  background: #fff;
+  border-radius: 15px;
+  width: 320px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nieto:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* ===== Títulos de platos ===== */
+.nieto h2 {
+  background: #0b5345;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.4rem;
+}
+
+/* ===== Imágenes ===== */
+.nieto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+/* ===== Listas ===== */
+.nieto ul {
+  list-style: none;
+  padding: 15px;
+}
+
+.nieto ul li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px;
+  background: #0b5345;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}

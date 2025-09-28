@@ -1,0 +1,105 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #b23c17;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Contenedor padre */
+.Padre {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Caja de cada plato */
+.nieto {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 15px;
+}
+
+/* Animación hover */
+.nieto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Títulos de los platos */
+.nieto h2 {
+    text-align: center;
+    background: #b23c17;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* Imágenes */
+.nieto img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    border-bottom: 3px solid #b23c17;
+}
+
+.nieto img:hover {
+    transform: scale(1.05);
+}
+
+/* Lista */
+.nieto ul {
+    list-style: none;
+    padding: 15px 20px;
+}
+
+.nieto ul li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #444;
+    position: relative;
+    padding-left: 25px;
+}
+
+/* Icono de viñeta personalizada */
+.nieto ul li::before {
+    content: "🍽️";
+    position: absolute;
+    left: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    font-size: 0.9rem;
+    background: #b23c17;
+    color: white;
+    border-radius: 10px;
+}
